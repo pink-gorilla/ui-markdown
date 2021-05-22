@@ -3,7 +3,7 @@
 Everything related to markdown:
 - html prose mode
 - markdown viewer
-- [Prosemirror](https://codemirror.net/) markdown editor.
+- [Prosemirror](https://prosemirror.net/) markdown editor.
 
 ## End-Users
 - this project is NOT for you! Instead go to:

@@ -2,8 +2,7 @@
   (:require
    [taoensso.timbre :refer-macros [debug info error]]
    [re-frame.core :refer [reg-event-db reg-event-fx dispatch]]
-   [day8.re-frame.http-fx] ; side-effects
-   [ajax.core :as ajax] ; https://github.com/JulianBirch/cljs-ajax
+   
    [webly.web.routes :refer [link]]))
 
 (reg-event-db
