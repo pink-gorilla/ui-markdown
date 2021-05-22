@@ -1,0 +1,8 @@
+{:id :prosemirror
+ :state {:md "# Hello, World"}
+ :html [:div
+        [:p "this snippet demonstrates to use prosemirror with a atom that has text"]
+        [:p/prosemirror 0 state [:md]]
+        [:p "state: " (pr-str @state)]]
+ :fns {}
+ :fns-raw {}}
