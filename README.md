@@ -7,10 +7,8 @@ Everything related to markdown:
 
 ## End-Users
 - this project is NOT for you! Instead go to:
-- [notebook](https://github.com/pink-gorilla/notebook)
 - [goldly](https://github.com/pink-gorilla/goldly)
-- 
-- 
+- [notebook](https://github.com/pink-gorilla/notebook)
 
 ## Demo
 
@@ -23,7 +21,10 @@ snippets are in `running systems` / `snippet-registry`
 
 ## Use with [goldly](https://github.com/pink-gorilla/goldly)
 
-This library provides the pinkie ui renderer [:p/codemirror id atom path]
+This library provides the pinkie ui renderer 
+  [:p/markdown]
+  [:p/prosemirror]
+  and the css class .prose
 
 You can add either just the ui renderer [ui.markdown.goldly.core], 
 or can also add the snippets [ui.markdown.goldly.snippets].
@@ -44,6 +45,6 @@ Add this alias to your deps.edn:
 
 ## Use outside of goldly and webly
 
-- We use on goldly and webly to manage css and for snippet examples.
+- We use goldly and webly to manage css and for snippet examples.
 - You can create a custom clojurescript project with shadow-cljs 
   and ignore `src/goldly`.
