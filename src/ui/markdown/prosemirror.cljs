@@ -84,4 +84,5 @@
                  :editor-destroy editor-destroy
                  :editor-create (partial editor-create save-data)})]
     (fn [id {:keys [get-data save-data] :as fun} active?]
-      [editor id active?])))
+      [:div.prose
+       [editor id active?]])))

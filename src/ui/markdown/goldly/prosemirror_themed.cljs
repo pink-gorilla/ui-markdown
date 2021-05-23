@@ -14,8 +14,7 @@
       (let [;theme (or @theme "paraiso-dark") ;"(or (:codemirror-theme @settings) "paraiso-dark")
             ;cm-opt-themed (merge cm-opt {:theme theme})
             ]
-        [:div.prose
-         [prosemirror-reagent id fun active?]]))))
+        [prosemirror-reagent id fun active?]))))
 
 
 
