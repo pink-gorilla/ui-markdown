@@ -18,5 +18,10 @@
 
 (add-snippet {:type :goldly
               :category :markdown
+              :id :markdown-viewer2
+              :filename "snippets/markdown/viewer2.clj"})
+
+(add-snippet {:type :goldly
+              :category :markdown
               :id :markdown-editor
               :filename "snippets/markdown/prosemirror.edn"})

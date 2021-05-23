@@ -11,12 +11,14 @@
   "reagent markdown render component
    usage:
     [markdown markdown-string]"
-  [md]
-  (if (nil? md) ; marked will crash on (nil? md), so we catch nil. 
-    [:p "Empty Markdown"]
-    [:div.prose  ; marked converts md to html; .prose ensures standard browser tags are restored (tailwind resets them)
-     {:dangerouslySetInnerHTML
-      {:__html (marked md)}}]))
+  ([md]
+   (markdown-viewer {} md))
+  ([props md]
+   (if (nil? md) ; marked will crash on (nil? md), so we catch nil. 
+     [:p "Empty Markdown"]
+     [:div.prose  ; marked converts md to html; .prose ensures standard browser tags are restored (tailwind resets them)
+      (merge {:dangerouslySetInnerHTML {:__html (marked md)}}
+             props)])))
 
 
 
