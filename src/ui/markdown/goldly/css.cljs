@@ -9,10 +9,11 @@
   {:prose    {true ["markdown/prose.css"]}
    :prose-mirror {true ["prosemirror-view/style/prosemirror.css"
                         "prosemirror-menu/style/menu.css"
-                        ;"notebook-ui/prosemirror-gorilla.css"
-                        ]}
+                        "markdown/prosemirror-gorilla.css"]}
 
    ;:codemirror 
+
+
    #_(add-themes
       {true ["codemirror/lib/codemirror.css"]}
       "codemirror/theme/%s.css"

@@ -4,7 +4,8 @@
    [ui.markdown.goldly.prosemirror-themed :refer [prosemirror-themed]]))
 
 (defn prosemirror-atom [id a path]
-  (let [get-data (fn [_] ; id
+  (let [active? true
+        get-data (fn [_] ; id
                    (if path
                      (get-in @a path)
                      @a))
@@ -16,4 +17,4 @@
         fun {:get-data get-data
              :save-data save-data}]
 
-    [prosemirror-themed id fun]))
+    [prosemirror-themed id fun active?]))
