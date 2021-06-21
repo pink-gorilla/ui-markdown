@@ -14,9 +14,7 @@
    ["prosemirror-markdown" :refer [schema defaultMarkdownParser defaultMarkdownSerializer]]
    [ui.editor.base :refer [make-editor]]))
 
-
 ; https://prosemirror.net/examples/markdown/
-
 
 (defn editor-content [editor]
   (.serialize
@@ -52,11 +50,9 @@
 (defn editor-blur [editor]
   (.blur editor))
 
-
 (defn editor-load-content [editor content]
   (let [doc (.parse defaultMarkdownParser content)]
     (set! (.. editor -state -doc) doc)))
-
 
 ;(defn mark-active [state type]
 ;  (let [from (.. state -selection -from)
@@ -69,7 +65,6 @@
 
 ; (markActive(state, markType)) {
 ;        toggleMark(markType)(state, dispatch)
-
 
 #_(defn header-icon [fa-icon mark] ; rf-dispatch
     [:a {:on-click #(rf/dispatch rf-dispatch)

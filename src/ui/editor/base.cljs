@@ -7,7 +7,6 @@
 ; currently only usd by prosemirror
 ; idea is that codemirror uses this also.
 
-
 (defn make-editor [{:keys [get-data
                            ;set-data 
                            editor-load-content

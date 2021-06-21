@@ -20,8 +20,6 @@
       (merge {:dangerouslySetInnerHTML {:__html (marked md)}}
              props)])))
 
-
-
 ;; awb99:
 ;; 
 ;; I tried two react components:
@@ -35,10 +33,8 @@
    ; unist-util-visit ^1.3.0
    ; unist-util-visit-parents@^2.0.0
 
-
 ; https://github.com/niquola/md-to-hiccup
 ; https://github.com/jsa-aerial/md-to-hiccup/blob/master/src/md_to_hiccup/core.cljc
-
 
 #_(defn markdown [md]
     [:div.gorilla-markdown
