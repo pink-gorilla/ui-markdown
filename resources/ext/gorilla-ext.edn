@@ -1,0 +1,21 @@
+{:name "ui-markdown"
+ :clj-require []
+ :cljs-namespace [ui.markdown.goldly.core]
+ :cljs-bindings {}
+ :cljs-ns-bindings {}
+ :snippets [{:type :pinkie
+              :category :markdown
+              :id :html-prose
+              :filename "snippets/markdown/prose.edn"}
+            {:type :pinkie
+              :category :markdown
+              :id :markdown-viewer
+              :filename "snippets/markdown/viewer.edn"}
+            {:type :goldly
+              :category :markdown
+              :id :markdown-viewer2
+              :filename "snippets/markdown/viewer2.clj"}
+            {:type :goldly
+              :category :markdown
+              :id :markdown-editor
+              :filename "snippets/markdown/prosemirror.edn"}]}

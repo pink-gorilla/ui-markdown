@@ -26,8 +26,6 @@ This library provides the pinkie ui renderer
   [:p/prosemirror]
   and the css class .prose
 
-You can add either just the ui renderer [ui.markdown.goldly.core], 
-or can also add the snippets [ui.markdown.goldly.snippets].
 
 Add this alias to your deps.edn:
 
@@ -37,9 +35,7 @@ Add this alias to your deps.edn:
                 org.pinkgorilla/ui-markdown {:mvn/version "0.0.3"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch"
-               :config {:goldly {:extensions [[ui.markdown.goldly.core]
-                                              [ui.markdown.goldly.snippets]
-                                              ]}}}}
+               :config {:goldly {:extensions []}}}}
 ```
 
 

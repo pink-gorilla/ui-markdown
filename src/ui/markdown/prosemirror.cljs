@@ -49,6 +49,10 @@
 (defn editor-focus [editor]
   (.focus editor))
 
+(defn editor-blur [editor]
+  (.blur editor))
+
+
 (defn editor-load-content [editor content]
   (let [doc (.parse defaultMarkdownParser content)]
     (set! (.. editor -state -doc) doc)))
