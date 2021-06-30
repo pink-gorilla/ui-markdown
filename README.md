@@ -35,7 +35,7 @@ Add this alias to your deps.edn:
                 org.pinkgorilla/ui-markdown {:mvn/version "0.0.3"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch"
-               :config {:goldly {:extensions []}}}}
+               :config {:goldly {}}}}
 ```
 
 
