@@ -1,21 +1,29 @@
 {:name "ui-markdown"
  :clj-require []
  :cljs-namespace [ui.markdown.goldly.core]
- :cljs-bindings {}
+ :cljs-bindings {'markdown ui.markdown.viewer/markdown-viewer
+                 'prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
  :cljs-ns-bindings {}
+ :theme {:available {:prose {true ["markdown/prose.css"]}
+                     :prose-mirror {true ["prosemirror-view/style/prosemirror.css"
+                                          "prosemirror-menu/style/menu.css"
+                                          "markdown/prosemirror-gorilla.css"]}}
+         :current {:prose true
+                   :prose-mirror true}}
+
  :snippets [{:type :pinkie
-              :category :markdown
-              :id :html-prose
-              :filename "snippets/markdown/prose.edn"}
+             :category :markdown
+             :id :html-prose
+             :filename "snippets/markdown/prose.edn"}
             {:type :pinkie
-              :category :markdown
-              :id :markdown-viewer
-              :filename "snippets/markdown/viewer.edn"}
+             :category :markdown
+             :id :markdown-viewer
+             :filename "snippets/markdown/viewer.edn"}
             {:type :goldly
-              :category :markdown
-              :id :markdown-viewer2
-              :filename "snippets/markdown/viewer2.clj"}
+             :category :markdown
+             :id :markdown-viewer2
+             :filename "snippets/markdown/viewer2.clj"}
             {:type :goldly
-              :category :markdown
-              :id :markdown-editor
-              :filename "snippets/markdown/prosemirror.edn"}]}
+             :category :markdown
+             :id :markdown-editor
+             :filename "snippets/markdown/prosemirror.edn"}]}
