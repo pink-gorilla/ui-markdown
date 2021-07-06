@@ -1,15 +1,18 @@
 {:name "ui-markdown"
  :clj-require []
- :cljs-namespace [ui.markdown.goldly.core]
- :cljs-bindings {'markdown ui.markdown.viewer/markdown-viewer
-                 'prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
- :cljs-ns-bindings {}
  :theme {:available {:prose {true ["markdown/prose.css"]}
                      :prose-mirror {true ["prosemirror-view/style/prosemirror.css"
                                           "prosemirror-menu/style/menu.css"
                                           "markdown/prosemirror-gorilla.css"]}}
          :current {:prose true
                    :prose-mirror true}}
+ :cljs-namespace [ui.markdown.viewer
+                  ui.markdown.goldly.prosemirror-atom]
+ :cljs-bindings {'markdown ui.markdown.viewer/markdown-viewer
+                 'prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
+ :cljs-ns-bindings {}
+ :pinkie {:p/markdown  ui.markdown.viewer/markdown-viewer
+          :p/prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
 
  :snippets [{:type :pinkie
              :category :markdown
