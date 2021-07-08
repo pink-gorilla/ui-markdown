@@ -13,7 +13,7 @@
  :cljs-ns-bindings {}
  :pinkie {:p/markdown  ui.markdown.viewer/markdown-viewer
           :p/prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
- :lazy false ; markdown is used by notebook, so cannot be lazy
+ :lazy true
  :snippets [{:type :pinkie
              :category :markdown
              :id :html-prose
