@@ -85,3 +85,6 @@
     (fn [id {:keys [get-data save-data] :as fun} active?]
       [:div.prose
        [editor id active?]])))
+
+(defn prosemirror-reagent2 [id {:keys [get-data save-data] :as fun} active?]
+  [prosemirror-reagent id fun active?])

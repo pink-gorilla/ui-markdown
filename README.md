@@ -31,8 +31,8 @@ Add this alias to your deps.edn:
 
 ```
  :goldly
-  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.2.39"}
-                org.pinkgorilla/ui-markdown {:mvn/version "0.0.3"}}
+  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "RELEASE"}
+                org.pinkgorilla/ui-markdown {:mvn/version "RELEASE"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch"
                :config {:goldly {}}}}

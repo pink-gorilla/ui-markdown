@@ -38,13 +38,13 @@
    :main-opts ["-m" "garamond.main"]}
 
   :npm-install
-  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "RELEASE"}}
+  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.3.11"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "npm-install"
                :config {:goldly {}}}}
 
   :goldly
-  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "RELEASE"}}
+  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.3.11"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch2"
                :config {:goldly {}}}}
