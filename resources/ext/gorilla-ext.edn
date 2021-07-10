@@ -9,7 +9,8 @@
  :cljs-namespace [ui.markdown.viewer
                   ui.markdown.goldly.prosemirror-atom]
  :cljs-bindings {'markdown ui.markdown.viewer/markdown-viewer
-                 'prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
+                 'prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom
+                 'pm-reagent ui.markdown.prosemirror/prosemirror-reagent2}
  :cljs-ns-bindings {}
  :pinkie {:p/markdown  ui.markdown.viewer/markdown-viewer
           :p/prosemirror ui.markdown.goldly.prosemirror-atom/prosemirror-atom}
